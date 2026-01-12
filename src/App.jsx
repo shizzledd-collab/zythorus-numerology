@@ -4578,52 +4578,33 @@ Question: "${chatInput}"`;
             <p className="text-gray-400 text-sm font-light tracking-wide" style={{letterSpacing: '0.01em'}}>Understanding the language of numbers</p>
           </div>
 
-          {/* Navigation */}
-          <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
+          {/* ALL SECTIONS - COLLAPSIBLE */}
+          <div className="space-y-4">
+          
+          {/* 1-9 MEANINGS SECTION */}
+          <div className="bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 overflow-hidden">
             <button
-              onClick={() => setLearnSection('meanings')}
-              className={`px-4 py-2 rounded-full text-xs font-medium transition whitespace-nowrap ${
-                learnSection === 'meanings'
-                  ? 'bg-gradient-to-r from-violet-600 to-purple-500 text-white shadow-lg'
-                  : 'bg-white/5 text-gray-400 hover:bg-white/10'
-              }`}
+              onClick={() => setCollapsedSections({...collapsedSections, meanings: !collapsedSections.meanings})}
+              className="w-full flex items-center justify-between p-5 hover:bg-white/10 transition"
             >
-              1-9 Meanings
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-violet-600 to-purple-500 rounded-xl flex items-center justify-center shadow-lg">
+                  <Hash className="w-5 h-5 text-white" />
+                </div>
+                <div className="text-left">
+                  <h3 className="text-lg font-semibold text-white">1-9 Meanings</h3>
+                  <p className="text-xs text-gray-400">Core number personalities & traits</p>
+                </div>
+              </div>
+              <div className={`transition-transform duration-300 ${collapsedSections.meanings ? '' : 'rotate-180'}`}>
+                <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
             </button>
-            <button
-              onClick={() => setLearnSection('types')}
-              className={`px-4 py-2 rounded-full text-xs font-medium transition whitespace-nowrap ${
-                learnSection === 'types'
-                  ? 'bg-gradient-to-r from-violet-600 to-purple-500 text-white shadow-lg'
-                  : 'bg-white/5 text-gray-400 hover:bg-white/10'
-              }`}
-            >
-              Number Types
-            </button>
-            <button
-              onClick={() => setLearnSection('master')}
-              className={`px-4 py-2 rounded-full text-xs font-medium transition whitespace-nowrap ${
-                learnSection === 'master'
-                  ? 'bg-gradient-to-r from-violet-600 to-purple-500 text-white shadow-lg'
-                  : 'bg-white/5 text-gray-400 hover:bg-white/10'
-              }`}
-            >
-              Master Numbers
-            </button>
-            <button
-              onClick={() => setLearnSection('systems')}
-              className={`px-4 py-2 rounded-full text-xs font-medium transition whitespace-nowrap ${
-                learnSection === 'systems'
-                  ? 'bg-gradient-to-r from-violet-600 to-purple-500 text-white shadow-lg'
-                  : 'bg-white/5 text-gray-400 hover:bg-white/10'
-              }`}
-            >
-              Systems
-            </button>
-          </div>
-
-          {/* 1-9 MEANINGS */}
-          {learnSection === 'meanings' && (
+            
+            {!collapsedSections.meanings && (
+              <div className="p-5 pt-0">
             <div className="space-y-5">
               {[1,2,3,4,5,6,7,8,9].map(num => {
                 const profile = numberProfiles[num];
@@ -4723,10 +4704,33 @@ Question: "${chatInput}"`;
                 );
               })}
             </div>
-          )}
+            )}
+          </div>
 
-          {/* NUMBER TYPES */}
-          {learnSection === 'types' && (
+          {/* NUMBER TYPES SECTION */}
+          <div className="bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 overflow-hidden">
+            <button
+              onClick={() => setCollapsedSections({...collapsedSections, types: !collapsedSections.types})}
+              className="w-full flex items-center justify-between p-5 hover:bg-white/10 transition"
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-pink-600 to-rose-500 rounded-xl flex items-center justify-center shadow-lg">
+                  <Calendar className="w-5 h-5 text-white" />
+                </div>
+                <div className="text-left">
+                  <h3 className="text-lg font-semibold text-white">Number Types</h3>
+                  <p className="text-xs text-gray-400">Birth, Life Path & Name explained</p>
+                </div>
+              </div>
+              <div className={`transition-transform duration-300 ${collapsedSections.types ? '' : 'rotate-180'}`}>
+                <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </button>
+            
+            {!collapsedSections.types && (
+              <div className="p-5 pt-0">
             <div className="space-y-4">
               {/* Birth Number */}
               <div className="bg-gradient-to-br from-rose-500/10 via-pink-500/10 to-rose-500/10 backdrop-blur-xl rounded-3xl p-6 border border-rose-400/20 shadow-2xl relative overflow-hidden">
@@ -4799,10 +4803,33 @@ Question: "${chatInput}"`;
                 </div>
               </div>
             </div>
-          )}
+            )}
+          </div>
 
-          {/* MASTER NUMBERS */}
-          {learnSection === 'master' && (
+          {/* MASTER NUMBERS SECTION */}
+          <div className="bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 overflow-hidden">
+            <button
+              onClick={() => setCollapsedSections({...collapsedSections, master: !collapsedSections.master})}
+              className="w-full flex items-center justify-between p-5 hover:bg-white/10 transition"
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-amber-600 to-yellow-500 rounded-xl flex items-center justify-center shadow-lg">
+                  <span className="text-white text-xl">👑</span>
+                </div>
+                <div className="text-left">
+                  <h3 className="text-lg font-semibold text-white">Master Numbers</h3>
+                  <p className="text-xs text-gray-400">11, 22, 33 - Rare spiritual paths</p>
+                </div>
+              </div>
+              <div className={`transition-transform duration-300 ${collapsedSections.master ? '' : 'rotate-180'}`}>
+                <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </button>
+            
+            {!collapsedSections.master && (
+              <div className="p-5 pt-0">
             <div className="space-y-6">
               {/* Hero */}
               <div className="bg-gradient-to-br from-amber-500/20 via-yellow-500/20 to-amber-500/20 backdrop-blur-xl rounded-3xl p-8 border border-amber-400/30 shadow-2xl text-center relative overflow-hidden">
@@ -4908,10 +4935,33 @@ Question: "${chatInput}"`;
                 </p>
               </div>
             </div>
-          )}
+            )}
+          </div>
 
-          {/* SYSTEMS */}
-          {learnSection === 'systems' && (
+          {/* SYSTEMS SECTION */}
+          <div className="bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 overflow-hidden">
+            <button
+              onClick={() => setCollapsedSections({...collapsedSections, systems: !collapsedSections.systems})}
+              className="w-full flex items-center justify-between p-5 hover:bg-white/10 transition"
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-500 rounded-xl flex items-center justify-center shadow-lg">
+                  <BookOpen className="w-5 h-5 text-white" />
+                </div>
+                <div className="text-left">
+                  <h3 className="text-lg font-semibold text-white">Systems</h3>
+                  <p className="text-xs text-gray-400">Cheiro's history & methodologies</p>
+                </div>
+              </div>
+              <div className={`transition-transform duration-300 ${collapsedSections.systems ? '' : 'rotate-180'}`}>
+                <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </button>
+            
+            {!collapsedSections.systems && (
+              <div className="p-5 pt-0">
             <div className="space-y-6">
               {/* Cheiro Hero */}
               <div className="bg-gradient-to-br from-purple-500/20 via-pink-500/20 to-purple-500/20 backdrop-blur-xl rounded-3xl p-8 border border-purple-400/30 shadow-2xl relative overflow-hidden">
@@ -4995,7 +5045,12 @@ Question: "${chatInput}"`;
                 </div>
               </div>
             </div>
-          )}
+            )}
+          </div>
+
+          </div>
+          {/* END COLLAPSIBLE SECTIONS */}
+
         </div>
         <TabBar />
       </div>
