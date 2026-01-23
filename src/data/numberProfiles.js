@@ -1,1 +1,143 @@
-
+export const numberProfiles = {
+  1: {
+    title: "Number 1",
+    ruling: "Sun",
+    gender: "Masculine",
+    kabbalah: "Unity, God, source, leadership, singularity",
+    personality: "**Leadership** and **independence** define you. **Creative**, **inventive**, and **strongly individual** with definite views. **Ambitious** - you dislike restraint and naturally rise to positions of authority. **Initiative** and **confidence** drive you forward. Make yourself **respected** in all spheres.",
+    strengths: "Natural **leader**, **innovative**, **ambitious**, strong **willpower**, **self-reliant**, rise to **authority**",
+    challenges: "Can be **domineering**, **stubborn**, **obstinate**, prideful, must be the head",
+    colors: "Yellow to deep orange, golden hues, pale yellow",
+    bestDays: "Sunday, Monday, 1st, 10th, 19th, 28th",
+    compatibleNumbers: [1, 2, 4, 7]
+  },
+  2: {
+    title: "Number 2", 
+    ruling: "Moon",
+    gender: "Feminine",
+    kabbalah: "Duality, polarity, partnership, balance, reflection",
+    personality: "**Diplomacy** and **sensitivity** are your gifts. **Gentle**, **imaginative**, **artistic**, and **romantic**. More **mental** than physical. Natural **mediator** with strong **intuition**. Excel in **partnership** and **cooperation**. Qualities more refined than forceful.",
+    strengths: "**Empathy**, **intuitive**, **artistic**, **diplomatic**, harmonious, excellent **teamwork**, gentle nature",
+    challenges: "**Indecisive**, **oversensitive**, lack **self-confidence**, **restless**, easily despondent, lack continuity in plans",
+    colors: "Green (darkest to lightest), cream, white - avoid black, purple, dark red",
+    bestDays: "Sunday, Monday, Friday, 2nd, 11th, 20th, 29th",
+    compatibleNumbers: [1, 2, 4, 7]
+  },
+  3: {
+    title: "Number 3",
+    ruling: "Jupiter", 
+    gender: "Masculine",
+    kabbalah: "Creativity, harmony, synthesis, growth, manifestation",
+    personality: "**Creativity** and **expression** flow through you. **Ambitious**, never satisfied in subordinate roles. Excel in **communication**, **artistic** pursuits, and social situations. **Optimistic** and **charming** with natural **expansion** energy. Love **order** and **discipline**. Often excel in **authority** positions.",
+    strengths: "**Creative**, **expressive**, **social**, excellent communicator, **artistic talent**, **ambitious**, conscientious",
+    challenges: "**Scattered**, lack **focus**, can be **superficial**, **dictatorial**, may exaggerate, make enemies easily",
+    colors: "Mauve, violet, purple (main), blue, crimson, rose (secondary)",
+    bestDays: "Thursday (most important), Friday, Tuesday, 3rd, 12th, 21st, 30th",
+    compatibleNumbers: [3, 6, 9]
+  },
+  4: {
+    title: "Number 4",
+    ruling: "Uranus (related to Sun, written 4-1)",
+    gender: "Neutral",
+    kabbalah: "Stability, structure, foundation, grounding, order",
+    personality: "**Structure** and **stability** ground you. **Disciplined**, **practical**, and **detail-oriented**. Natural **organizer** who sees things from a **different angle**. **Unconventional** thinker, natural **rebel** against rules while creating your own **order**. Attracted to **reforms**.",
+    strengths: "**Reliable**, **organized**, **practical**, excellent **planning**, strong **work ethic**, **reformer**, distinct viewpoint",
+    challenges: "**Rigid**, **stubborn**, feel **isolated**, make secret enemies, **highly strung**, seldom successful in material matters",
+    colors: "Half-shades, half-tones, electric colors - electric blues and grays best",
+    bestDays: "Saturday, Sunday, Monday, 4th, 13th, 22nd, 31st",
+    compatibleNumbers: [1, 2, 4, 7, 8]
+  },
+  5: {
+    title: "Number 5",
+    ruling: "Mercury",
+    gender: "Neutral",
+    kabbalah: "Change, freedom, movement, adaptability, exploration",
+    personality: "**Freedom** and **change** energize you. **Versatile**, **adaptable**, and mentally **quick**. Crave **variety** and **excitement**. **Impulsive** with rapid thought and **communication** skills. Excel in **dynamic** situations and rebound quickly from setbacks. Live on your **nerves**, mentally highly strung.",
+    strengths: "**Adaptable**, **resourceful**, quick thinking, **communicative**, **innovative**, make friends easily, **speculative** ability",
+    challenges: "**Restless**, **scattered**, impulsive, lack **discipline**, exhaust nervous strength, nervous breakdowns possible",
+    colors: "Light gray, white, glistening materials - can wear all shades but light is best, avoid dark",
+    bestDays: "Wednesday, Friday, 5th, 14th, 23rd",
+    compatibleNumbers: [1, 3, 5, 7, 9]
+  },
+  6: {
+    title: "Number 6",
+    ruling: "Venus",
+    gender: "Feminine",
+    kabbalah: "Harmony, beauty, integration, responsibility, cooperation",
+    personality: "**Harmony** and **responsibility** guide you. Extremely **magnetic** - you attract and **nurture** others. **Artistic**, love **beauty**, music, and refined surroundings. **Devoted** when attached, more mother-love than sensual. Excel in **service**, **family**, and creating **balance**. Most generous to art.",
+    strengths: "**Caring**, **protective**, **artistic**, **magnetic** personality, **cooperative**, socially balanced, devoted, generous",
+    challenges: "**Controlling**, overly **responsible**, **obstinate**, **stubborn** in relationships, can't stand discord, fight to death for cause",
+    colors: "Blue (lightest to darkest), green, rose, pink - avoid black and dark purple",
+    bestDays: "Tuesday, Thursday, Friday, 6th, 15th, 24th",
+    compatibleNumbers: [3, 6, 9]
+  },
+  7: {
+    title: "Number 7",
+    ruling: "Neptune (associated with Moon)",
+    gender: "Masculine",
+    kabbalah: "Spirituality, mystery, introspection, contemplation, intuition",
+    personality: "**Analysis** and **introspection** define you. **Independent** with strongly **original** views. **Spiritual** seeker with remarkable **intuition** and **clairvoyance**. Natural **researcher**, writer, or philosopher. Love **travel** and **mystical** pursuits. Create your own unique worldview. Peculiar quieting **magnetism**.",
+    strengths: "**Analytical**, **philosophical**, **intuitive**, excellent writer/thinker, strong **individuality**, **clairvoyant** gifts, love travel",
+    challenges: "**Isolated**, **restless**, may not follow through, **misunderstood**, care little for **material** success, seen as strange",
+    colors: "Green (all pale shades), white, yellow - avoid heavy dark colors",
+    bestDays: "Sunday, Monday, 7th, 16th, 25th",
+    compatibleNumbers: [1, 2, 4, 7]
+  },
+  8: {
+    title: "Number 8",
+    ruling: "Saturn (Planet of Fate)",
+    gender: "Feminine",
+    kabbalah: "Power, mastery, abundance, authority, transcendence",
+    personality: "**Power** and **ambition** drive you. Deep, **intense** nature with strong **executive** ability. Face **karmic** lessons - either great **success** or great challenges. **Strategic** thinker with **authority**. **Misunderstood** but play important roles. **Material achievement** through discipline. Often feel lonely at heart.",
+    strengths: "**Strategic**, **disciplined**, strong **leadership**, business acumen, concentrated **willpower**, deep intensity, philosophical",
+    challenges: "Feel **lonely**, **misunderstood**, face sorrows/losses, can be **rigid**, **controlling**, make bitter enemies, seldom reap reward while living",
+    colors: "Dark gray, black, dark blue, purple - would look awkward in light colors",
+    bestDays: "Saturday (most important), Sunday, Monday, 8th, 17th, 26th",
+    compatibleNumbers: [2, 4, 6, 8]
+  },
+  9: {
+    title: "Number 9",
+    ruling: "Mars",
+    gender: "Masculine",
+    kabbalah: "Completion, wholeness, compassion, wisdom from experience",
+    personality: "**Completion** and **compassion** mark your path. **Fighter** with great **courage** and **determination**. **Humanitarian** with **idealistic** vision. Natural **leader** who succeeds through grit. **Service-oriented** with strong will. Difficult times early but successful in end. May face challenges but triumph eventually.",
+    strengths: "**Courageous**, **determined**, **compassionate**, excellent **organizer**, **humanitarian**, visionary, fighters, grit and strong will",
+    challenges: "**Hasty temper**, **impulsive**, make enemies, overly **idealistic**, cause **strife**, prone to accidents, quarrels in home",
+    colors: "Crimson, red (all shades), rose tones, pink",
+    bestDays: "Tuesday (Mars Day - most important), Thursday, Friday, 9th, 18th, 27th",
+    compatibleNumbers: [3, 6, 9]
+  },
+  11: {
+    title: "The Illuminator (Master)",
+    ruling: "Moon + Sun (1+1)",
+    kabbalah: "Heightened intuition, spiritual insight, amplified duality",
+    personality: "Spiritual messengers with heightened intuition. Visionaries here to inspire others.",
+    strengths: "Intuition, inspiration, spiritual insight, visionary thinking",
+    challenges: "Overwhelmed by sensitivity. May struggle with practical matters.",
+    colors: "Silver, white, pale shimmering tones",
+    bestDays: "Mondays, 11th, 29th",
+    compatibleNumbers: [2, 4, 6, 8, 11]
+  },
+  22: {
+    title: "The Master Builder",
+    ruling: "Saturn + Moon (2+2)",
+    kabbalah: "Building, manifestation on grand scale, integrating ideals into reality",
+    personality: "Most powerful number combining intuition with practical building ability.",
+    strengths: "Practical visionary, manifesting dreams, large-scale achievement",
+    challenges: "Enormous pressure and responsibility. May become overwhelmed.",
+    colors: "Earth tones, deep greens",
+    bestDays: "Saturdays, 22nd",
+    compatibleNumbers: [2, 4, 6, 8, 11, 22]
+  },
+  33: {
+    title: "The Master Teacher",
+    ruling: "Jupiter + Venus (3+3)",
+    kabbalah: "Compassion, universal teaching, spiritual leadership",
+    personality: "Rarest and most spiritually advanced. Master teachers devoted to selfless service.",
+    strengths: "Unconditional love, healing abilities, teaching, spiritual leadership",
+    challenges: "Can sacrifice self too much. May take on others' burdens.",
+    colors: "Gold and sea green",
+    bestDays: "Thursdays, Fridays",
+    compatibleNumbers: [6, 9, 11, 22, 33]
+  }
+};
